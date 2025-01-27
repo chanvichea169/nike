@@ -39,7 +39,7 @@ const Footer = () => {
         <div className="flex flex-col items-start gap-5">
           <h4 className="text-lg font-bold text-white">Follow Us</h4>
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/share/15adbnS5NG/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-slate-gray"
@@ -47,12 +47,12 @@ const Footer = () => {
             Facebook
           </a>
           <a
-            href="https://twitter.com"
+            href="https://t.me/Vichea_Chann"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-slate-gray"
           >
-            Twitter
+            Telegram
           </a>
           <a
             href="https://instagram.com"

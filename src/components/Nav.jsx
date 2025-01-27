@@ -29,9 +29,32 @@ const Nav = () => {
           ))}
         </ul>
         <div className="hidden max-lg:block">
-          <img src={hamburger} alt="Hamburger" width={24} height={24} />
+          <img
+            src={hamburger}
+            alt="Hamburger"
+            width={24}
+            height={24}
+            onClick={toggleDropdown}
+            className="cursor-pointer"
+          />
         </div>
       </nav>
+      {isDropdownOpen && (
+        <div className="absolute top-full left-0 w-full bg-white shadow-lg max-lg:block lg:hidden">
+          <ul className="flex flex-col items-start p-4">
+            {navLinks.map((item) => (
+              <li key={item.label} className="w-full">
+                <a
+                  href={item.href}
+                  className="block w-full py-2 px-4 font-montserrat text-lg text-slate-gray hover:text-black"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </header>
   );
 };

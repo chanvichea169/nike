@@ -6,7 +6,6 @@ const Services = () => {
       {services.map((service) => (
         <ServiceCard key={service.label} {...service} />
       ))}
-      ;
     </section>
   );
 };
